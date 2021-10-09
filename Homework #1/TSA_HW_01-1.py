@@ -13,3 +13,9 @@ y = np.cos(x)-x/6
 
 plt.plot(x,y)
 plt.show()
+
+x = np.arange(0,16*np.pi,0.1)   # start,stop,step
+y = np.cos(x/2)-x/12
+
+plt.plot(x,y)
+plt.show()
