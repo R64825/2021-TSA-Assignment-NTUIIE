@@ -32,6 +32,7 @@ print("Missing: "+ str(len(df)-before)+" data")
 
 # filling missing data with int(mean)
 df['AQI']=df['AQI'].fillna(int(df['AQI'].mean()))
+df['CO']=df['CO'].fillna(df['CO'].mean())
 df['PM2.5_AVG']=df['PM2.5_AVG'].fillna(int(df['PM2.5_AVG'].mean()))
 df['PM2.5']=df['PM2.5'].fillna(int(df['PM2.5'].mean()))
 

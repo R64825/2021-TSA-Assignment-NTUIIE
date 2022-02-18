@@ -20,4 +20,5 @@ for root,dirs,files in os.walk(directory):
         df = df.append(df_new)
         print("append file:" + files[i])
 
+# output csv
 df.to_csv(output_name + ".csv")
